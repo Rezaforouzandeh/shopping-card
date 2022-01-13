@@ -13,11 +13,11 @@ const initialState = {
 const CartProvider = ({ children }) => {
   const [cart, dispatch] = useReducer(cartReducer, initialState);
   return (
-    <CartContext.CartProvider value={cart}>
+    <CartContext.Provider value={cart}>
       <CartContextDispatcher.Provider value={dispatch}>
         {children}
       </CartContextDispatcher.Provider>
-    </CartContext.CartProvider>
+    </CartContext.Provider>
   );
 };
 
