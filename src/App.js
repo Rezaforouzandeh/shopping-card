@@ -1,22 +1,17 @@
-
-import './App.css';
-import HomePage from './pages/HomePage';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  Routes
-} from "react-router-dom";
+import "./App.css";
+import HomePage from "./pages/HomePage";
+import CardPage from "./pages/CartPage";
+import {Route, Routes} from "react-router-dom";
+import CartProvider from "./Providers/CartProviders";
 
 function App() {
   return (
-    <Router>
-
-    <div className="App">
-      <HomePage />
-    </div>
-    </Router>
+    <Routes>
+      <CartProvider>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/card" element={<CardPage />} />
+      </CartProvider>
+    </Routes>
   );
 }
 

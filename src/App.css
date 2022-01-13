@@ -11,3 +11,51 @@
 body {
   background-color: #f6f6f6;
 }
+.product {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgb(128,175,254); */
+}
+.productList {
+  display: flex;
+  margin-top: 50px;
+  /* background-color: #fff; */
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 5rem;
+  grid-row-gap: 5rem;
+  max-width: 1900px;
+  width: 90vw;
+}
+.productDesc {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.productImage img {
+  width: 100%;
+  height: auto;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 6px 15px;
+  background-color: #ede9fe;
+  border-radius: 5px;
+  color: #6d28d9;
+}
+
+.primary{
+  background-color: #6d28d9;
+  color: #ede9fe;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
